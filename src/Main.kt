@@ -160,15 +160,23 @@ fun main()
  */
 
 //Using map in Kotlin..
-fun main()
+/* fun main()
 {
     //Using mapOf (it has the same limitation like listOf) to add values in map it uses mutableMapOf
-    var map = mapOf(1 to "Abhishek", 2 to "Anirudh", 3 to "Achint", 4 to "Akshat", 5 to "Pashu Mafia")
+   // var map = mapOf(1 to "Abhishek", 2 to "Anirudh", 3 to "Achint", 4 to "Akshat", 5 to "Pashu Mafia")
 
     //We can use map[] to get the value in the map according to its index map[index]
     //We can use map.get(index) to get the value in the map but map[] is considered the best practise.
-    println(map[1])
-    println(map.get(2))
+  //  println(map[1])
+  //  println(map.get(2))
+
+    /*
+    * Using forEach to print the value
+    * map.forEach { (number, name) ->
+        println("$number -> $name")
+    }
+    */
+
 
     /*
     //It is used to print the values with their keys
@@ -177,5 +185,48 @@ fun main()
     }
      */
 
+    //mutableMapOf
+    var muMap = mutableMapOf(1 to "Abhishek", 2 to "Anirudh", 3 to "Achint", 4 to "Akshat", 5 to "Pashu Mafia")
 
+    //to Put value in mutableMapOf we use put i.e muMap.put(index, "Value")
+    //we can also use muMap[index] = "Value"
+    muMap.put(6, "CC")
+    muMap[7] = "KAKA Gang"
+    // Using key that is assigned to some value again will remove the old key and store the new one.
+   // muMap[5] = "CC"
+
+    //for printing the value as same as all others
+    /*
+    for (items in muMap){
+        println(items)
+    }
+     */
+
+    //to get the data we can use muMap[key] or muMap.get(key)
+   // println(muMap.get(1))
+   // muMap[6] = "Pashu Mafia"
+   // println(muMap)
+
+    /*
+    muMap.forEach { num, name ->
+        println("$num => $name")
+    }
+     */
 }
+ */
+
+//Using Functions
+
+//Its the main which will be executed
+/*
+fun main()
+{
+    name("Anirudh")
+}
+//name function which contain a parameter of String
+fun name (name: String){
+     println("Hey My name is ${name} ${greet()}.")
+}
+//fun which return String
+fun greet(): String = "Sharma"
+ */
