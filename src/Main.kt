@@ -129,6 +129,7 @@
 
 // ARRAYS
 
+/*
 fun main()
 
 {
@@ -155,4 +156,26 @@ fun main()
      */
 
     // size, get, add and some other function in arrays can be implemented same as shown in lists above
+}
+ */
+
+//Using map in Kotlin..
+fun main()
+{
+    //Using mapOf (it has the same limitation like listOf) to add values in map it uses mutableMapOf
+    var map = mapOf(1 to "Abhishek", 2 to "Anirudh", 3 to "Achint", 4 to "Akshat", 5 to "Pashu Mafia")
+
+    //We can use map[] to get the value in the map according to its index map[index]
+    //We can use map.get(index) to get the value in the map but map[] is considered the best practise.
+    println(map[1])
+    println(map.get(2))
+
+    /*
+    //It is used to print the values with their keys
+    for (niggers in map){
+        println(niggers)
+    }
+     */
+
+
 }
